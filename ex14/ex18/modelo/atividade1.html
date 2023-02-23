@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contagem</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="contar()"> 
+    <header>
+        <h1>Bora Contar</h1>
+    </header>
+    <section>
+        <div id="inicio">
+            Inicio: <input type="number" name="in" id="in">
+        </div>
+        <div id="fim">
+            Fim: <input type="number" name="fi" id="fi">
+        </div>
+        <div id="passo">
+            Passo: <input type="number" name="pa" id="pa">
+        </div>  <br>
+        <div id="ct">
+            <input type="button" value="contar" onclick="contar()">
+        </div>
+        <div id="msg">Preparando a contagem...</div>
+        <p id="sei"></p>
+    </section>
+    <footer>
+        <p>&copy;XandãoReiDela777</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
