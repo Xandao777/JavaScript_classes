@@ -15,7 +15,7 @@ function verificar() {
         if (fsex[0].checked) {
             genero = 'Homem'
             if (idade >= 0 && idade < 11) {
-                img.setAttribute('src', 'imagens/menino.jpg')
+                img.setAttribute('src', 'imagens/menino.jpg') /* usado para atribuir uma imagem na parte HTML */
             } else if ( idade < 21) {
                 img.setAttribute('src', 'imagens/jovem.jpg')
             } else if ( idade < 50) {
@@ -35,8 +35,8 @@ function verificar() {
                 img.setAttribute('src', 'imagens/idosa.jpg')
             }
         }
-        msg.style.textAlign = 'center'
+        msg.style.textAlign = 'center' /* usa uma função do CSS dentro do JS, essa função permite mudar o local de um texto da parte em html */
         msg.innerHTML = `Detectamos ${genero} com ${idade} anos`
-        msg.appendChild(img)
+        msg.appendChild(img) /* usado para mostra a imagem adicionada com o comando setattribute */
     }
 }

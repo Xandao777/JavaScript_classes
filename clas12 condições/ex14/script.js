@@ -1,8 +1,8 @@
 function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
-    var data = new Date()
-    var hora = data.getHours()
+    var data = new Date() /* importa a biblioteca Date/ o New pode ser usado para importar bibliotecas do JavaScrip */
+    var hora = data.getHours() /* usa uma função especifica da biblioteca data */
     msg.innerHTML = `Agora são ${hora} horas.`
     console.log(`Agora são exatamente ${hora} horas.`)
     if (hora > 6 && hora < 12) {

@@ -27,17 +27,17 @@
     </div>
     <script>
         var a = window.document.getElementById('area')
-        a.addEventListener('click', clicar)
+        a.addEventListener('click', clicar) /*  da uma função a um evento especifico  */
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
         
-        function clicar() {
+        function clicar() { /* cria uma função com o nome colocado no addeventlistener */
             a.innerText = 'clicou!'
-            a.style.background = 'red'
+            a.style.background = 'red' /* muda a cor do background */
         }
         
         function sair() {
-            a.innerText = 'saiu'
+            a.innerText = 'saiu' /* muda o texto de uma variavel da parte do HTML */
             a.style.background = 'blueviolet'
         }
         
